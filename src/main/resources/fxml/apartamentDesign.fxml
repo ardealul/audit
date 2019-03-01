@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.effect.ColorInput?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ro.Controller.ApartamentController">
+   <children>
+      <ImageView fitHeight="400.0" fitWidth="607.0" layoutX="-3.0">
+         <image>
+            <Image url="@../pictures/background.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="68.0" fitWidth="200.0" layoutX="200.0" layoutY="57.0">
+         <image>
+            <Image url="@../pictures/megavoxlogo.png" />
+         </image>
+      </ImageView>
+      <TextField fx:id="suprafataApartament" layoutX="118.0" layoutY="191.0" prefHeight="31.0" prefWidth="126.0" promptText="Suprafata Utila" />
+      <TextField fx:id="inaltimeApartament" layoutX="349.0" layoutY="191.0" prefHeight="31.0" prefWidth="126.0" promptText="Inaltimea" />
+      <Button fx:id="proiectNouButton" layoutX="337.0" layoutY="282.0" mnemonicParsing="false" onAction="#proiectNou" text="Creaza Proiect Nou" />
+      <Button fx:id="intoarceteButton" layoutX="103.0" layoutY="282.0" mnemonicParsing="false" onAction="#intoarceProiect" text="Intoarce-te la Proiect" />
+      <Label layoutX="116.0" layoutY="161.0" text="Suprafata Utila" textFill="WHITE">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="362.0" layoutY="161.0" text="Inaltimea" textFill="WHITE">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
