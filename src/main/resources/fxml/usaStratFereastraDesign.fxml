@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="713.0" prefWidth="1070.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ro.Controller.ControllerPerete">
+   <children>
+      <ImageView fitHeight="713.0" fitWidth="1070.0">
+         <image>
+            <Image url="@../pictures/background.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="adaugaPeretebtn" fitHeight="50.0" fitWidth="177.0" layoutX="857.0" layoutY="588.0" onMouseClicked="#adaugaPereteAction">
+         <image>
+            <Image url="@../pictures/buton%20adauga%20perete.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="adaugaPer" layoutX="854.0" layoutY="583.0" mnemonicParsing="false" onAction="#adaugaPer" opacity="0.0" prefHeight="50.0" prefWidth="177.0" text="Button" />
+      <ImageView fitHeight="93.0" fitWidth="274.0" layoutX="377.0" layoutY="14.0">
+         <image>
+            <Image url="@../pictures/megavoxlogo.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="887.0" layoutY="120.0" text="Id Perete" textFill="WHITE">
+         <font>
+            <Font name="EmojiOne Color SVGinOT" size="28.0" />
+         </font>
+      </Label>
+      <TextField fx:id="idPereteField" layoutX="852.0" layoutY="150.0" promptText="Id Perete" />
+      <TextField fx:id="inaltimeField" layoutX="852.0" layoutY="218.0" promptText="Inaltime Perete" />
+      <Label layoutX="887.0" layoutY="188.0" text="Inaltime" textFill="WHITE">
+         <font>
+            <Font name="EmojiOne Color SVGinOT" size="28.0" />
+         </font>
+      </Label>
+      <Label layoutX="887.0" layoutY="256.0" text="Lungime" textFill="WHITE">
+         <font>
+            <Font name="EmojiOne Color SVGinOT" size="28.0" />
+         </font>
+      </Label>
+      <TextField fx:id="lungimeField" layoutX="852.0" layoutY="286.0" promptText="Lungime Perete" />
+      <ChoiceBox fx:id="punctCardinalField" layoutX="852.0" layoutY="354.0" prefHeight="31.0" prefWidth="187.0" />
+      <Label layoutX="857.0" layoutY="326.0" text="Punct Cardinal" textFill="WHITE">
+         <font>
+            <Font name="EmojiOne Color SVGinOT" size="28.0" />
+         </font>
+      </Label>
+      <Label layoutX="875.0" layoutY="390.0" text="Tip Perete" textFill="WHITE">
+         <font>
+            <Font name="EmojiOne Color SVGinOT" size="28.0" />
+         </font>
+      </Label>
+      <ChoiceBox fx:id="tipPereteField" layoutX="852.0" layoutY="420.0" prefHeight="31.0" prefWidth="187.0" />
+      <TableView fx:id="pereteTableView" layoutX="48.0" layoutY="149.0" onMouseClicked="#getTableItemSelected" prefHeight="482.0" prefWidth="780.0" styleClass="tableView">
+        <columns>
+          <TableColumn fx:id="idColoana" prefWidth="75.0" text="ID" />
+          <TableColumn fx:id="inaltimeCoalana" prefWidth="134.0" text="Inaltime" />
+            <TableColumn fx:id="lungimeColoana" prefWidth="152.0" text="Lungime" />
+            <TableColumn fx:id="punctCardinalColoana" prefWidth="209.0" text="Punct Cardinal" />
+            <TableColumn fx:id="tipPereteColoana" prefWidth="207.0" text="Tip Perete" />
+        </columns>
+      </TableView>
+      <ImageView fitHeight="50.0" fitWidth="177.0" layoutX="857.0" layoutY="528.0">
+         <image>
+            <Image url="@../pictures/butonSterge.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="50.0" fitWidth="177.0" layoutX="857.0" layoutY="471.0">
+         <image>
+            <Image url="@../pictures/modificaButton.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="stergePerete" layoutX="857.0" layoutY="529.0" mnemonicParsing="false" onAction="#stergePerete" opacity="0.0" prefHeight="43.0" prefWidth="177.0" text="Button" />
+      <Button fx:id="modificaPerete" layoutX="854.0" layoutY="469.0" mnemonicParsing="false" onAction="#modificaPerete" opacity="0.0" prefHeight="43.0" prefWidth="177.0" text="Button" />
+      <ImageView fitHeight="59.0" fitWidth="200.0" layoutX="635.0" layoutY="649.0">
+         <image>
+            <Image url="@../pictures/InainteButton.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="urmPasButton" layoutX="634.0" layoutY="647.0" mnemonicParsing="false" onAction="#urmPasAction" opacity="0.0" prefHeight="50.0" prefWidth="193.0" text="Urmatorul Pas" />
+      <ImageView fitHeight="59.0" fitWidth="200.0" layoutX="48.0" layoutY="649.0">
+         <image>
+            <Image url="@../pictures/inapoiButton.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="pasAnteriorButton" layoutX="48.0" layoutY="647.0" mnemonicParsing="false" onAction="#pasAnteriorAction" opacity="0.0" prefHeight="50.0" prefWidth="193.0" text="Pas Anterior" />
+   </children>
+</AnchorPane>

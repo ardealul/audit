@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<TabPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" tabClosingPolicy="UNAVAILABLE" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ro.Controller.Controller">
+  <tabs>
+      <Tab text="Adauga Strat">
+         <content>
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+               <children>
+                  <ImageView fitHeight="376.0" fitWidth="612.0" layoutX="-4.0" layoutY="-6.0">
+                     <image>
+                        <Image url="@../pictures/background.png" />
+                     </image>
+                  </ImageView>
+                  <ListView fx:id="pereteStraturiListView" layoutX="14.0" layoutY="28.0" prefHeight="147.0" prefWidth="126.0" />
+                  <TextField fx:id="idPereteStratField" layoutX="164.0" layoutY="143.0" prefHeight="31.0" prefWidth="80.0" promptText="ID Perete" />
+                  <TextField fx:id="idStratField" layoutX="266.0" layoutY="143.0" prefHeight="31.0" prefWidth="80.0" promptText="ID Strat" />
+                  <TextField fx:id="conductivitateField" layoutX="368.0" layoutY="143.0" prefHeight="31.0" prefWidth="103.0" promptText="Conductivitate" />
+                  <TextField fx:id="grosimeField" layoutX="495.0" layoutY="143.0" prefHeight="31.0" prefWidth="80.0" promptText="Grosime" />
+                  <Label layoutX="164.0" layoutY="120.0" text="ID Perete" textFill="WHITE">
+                     <font>
+                        <Font name="EmojiOne Color SVGinOT" size="19.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="270.0" layoutY="120.0" text="ID Strat" textFill="WHITE">
+                     <font>
+                        <Font name="EmojiOne Color SVGinOT" size="19.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="355.0" layoutY="120.0" text="Conductivitatea" textFill="WHITE">
+                     <font>
+                        <Font name="EmojiOne Color SVGinOT" size="19.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="495.0" layoutY="120.0" text="Grosimea" textFill="WHITE">
+                     <font>
+                        <Font name="EmojiOne Color SVGinOT" size="19.0" />
+                     </font>
+                  </Label>
+                  <Button fx:id="adaugaStratButton1" layoutX="167.0" layoutY="199.0" mnemonicParsing="false" onAction="#adaugaStratPerete" text="Adauga" />
+                  <Button fx:id="modificaStratButton" layoutX="325.0" layoutY="199.0" mnemonicParsing="false" onAction="#modificaStrat" text="Modifica" />
+                  <Button fx:id="stergeStratButton" layoutX="500.0" layoutY="199.0" mnemonicParsing="false" onAction="#stergeStrat" text="Sterge" />
+                  <Button fx:id="terminaStratButton" layoutX="406.0" layoutY="270.0" mnemonicParsing="false" onAction="#terminaAdaugatStrat" text="Termina de adaugat" />
+                  <Button fx:id="anuleazaStratButton" layoutX="168.0" layoutY="270.0" mnemonicParsing="false" onAction="#anuleazaAdaugariStrat" text="Anuleaza adaugarile" />
+                  <ListView fx:id="stratListView" layoutX="14.0" layoutY="200.0" prefHeight="147.0" prefWidth="126.0" />
+                  <Label layoutX="31.0" layoutY="4.0" text="Lista Pereti" textFill="WHITE">
+                     <font>
+                        <Font name="EmojiOne Color SVGinOT" size="19.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="24.0" layoutY="178.0" text="Lista Straturi" textFill="WHITE">
+                     <font>
+                        <Font name="EmojiOne Color SVGinOT" size="19.0" />
+                     </font>
+                  </Label>
+                  <ImageView fitHeight="68.0" fitWidth="200.0" layoutX="225.0" layoutY="32.0">
+                     <image>
+                        <Image url="@../pictures/megavoxlogo.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+         </content>
+      </Tab>
+      <Tab text="Adauga Fereastra">
+         <content>
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+               <children>
+                  <ImageView fitHeight="376.0" fitWidth="612.0" layoutX="-4.0" layoutY="-6.0">
+                     <image>
+                        <Image url="@../pictures/background.png" />
+                     </image>
+                  </ImageView>
+                  <ListView fx:id="pereteFerestreListView" layoutX="14.0" layoutY="28.0" prefHeight="147.0" prefWidth="126.0" />
+                  <TextField fx:id="idPereteFerestreField" layoutX="164.0" layoutY="143.0" prefHeight="31.0" prefWidth="80.0" promptText="ID Perete" />
+                  <TextField fx:id="idStratField1" layoutX="266.0" layoutY="143.0" prefHeight="31.0" prefWidth="80.0" promptText="ID Fereastra" />
+                  <TextField fx:id="inaltimeFereastraField" layoutX="368.0" layoutY="143.0" prefHeight="31.0" prefWidth="103.0" promptText="Inaltime" />
+                  <TextField fx:id="lungimeFereastraField" layoutX="495.0" layoutY="143.0" prefHeight="31.0" prefWidth="80.0" promptText="Lungime" />
+                  <Label layoutX="164.0" layoutY="120.0" text="ID Perete" textFill="WHITE">
+                     <font>
+                        <Font name="EmojiOne Color SVGinOT" size="19.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="248.0" layoutY="120.0" text="ID Fereastra" textFill="WHITE">
+                     <font>
+                        <Font name="EmojiOne Color SVGinOT" size="19.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="385.0" layoutY="120.0" text="Inaltime" textFill="WHITE">
+                     <font>
+                        <Font name="EmojiOne Color SVGinOT" size="19.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="495.0" layoutY="120.0" text="Lungime" textFill="WHITE">
+                     <font>
+                        <Font name="EmojiOne Color SVGinOT" size="19.0" />
+                     </font>
+                  </Label>
+                  <Button fx:id="adaugaFereastraButton" layoutX="167.0" layoutY="199.0" mnemonicParsing="false" onAction="#adaugaFereastra" text="Adauga" />
+                  <Button fx:id="modificaFereastraButton" layoutX="325.0" layoutY="199.0" mnemonicParsing="false" onAction="#modificaFereastra" text="Modifica" />
+                  <Button fx:id="stergeFereastraButton" layoutX="500.0" layoutY="199.0" mnemonicParsing="false" onAction="#stergeFereastra" text="Sterge" />
+                  <Button fx:id="terminaFereastraButton" layoutX="406.0" layoutY="270.0" mnemonicParsing="false" onAction="#terminaAdaugatFereastra" text="Termina de adaugat" />
+                  <Button fx:id="anuleazaAdaugariFereastra" layoutX="168.0" layoutY="270.0" mnemonicParsing="false" onAction="#anuleazaAdaugariFereastra" text="Anuleaza adaugarile" />
+                  <ListView fx:id="ferestreListView" layoutX="14.0" layoutY="200.0" prefHeight="147.0" prefWidth="126.0" />
+                  <Label layoutX="31.0" layoutY="4.0" text="Lista Pereti" textFill="WHITE">
+                     <font>
+                        <Font name="EmojiOne Color SVGinOT" size="19.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="24.0" layoutY="178.0" text="Lista Ferestre" textFill="WHITE">
+                     <font>
+                        <Font name="EmojiOne Color SVGinOT" size="19.0" />
+                     </font>
+                  </Label>
+                  <ImageView fitHeight="68.0" fitWidth="200.0" layoutX="225.0" layoutY="32.0">
+                     <image>
+                        <Image url="@../pictures/megavoxlogo.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+         </content>
+      </Tab>
+      <Tab text="Adauga Usa">
+         <content>
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+               <children>
+                  <ImageView fitHeight="376.0" fitWidth="612.0" layoutX="-4.0" layoutY="-6.0">
+                     <image>
+                        <Image url="@../pictures/background.png" />
+                     </image>
+                  </ImageView>
+                  <ListView fx:id="pereteUsiListView" layoutX="14.0" layoutY="28.0" prefHeight="147.0" prefWidth="126.0" />
+                  <TextField fx:id="idPereteUsaField" layoutX="164.0" layoutY="143.0" prefHeight="31.0" prefWidth="80.0" promptText="ID Perete" />
+                  <TextField fx:id="idUsaField" layoutX="266.0" layoutY="143.0" prefHeight="31.0" prefWidth="80.0" promptText="ID Usa" />
+                  <TextField fx:id="inaltimeUsaField" layoutX="368.0" layoutY="143.0" prefHeight="31.0" prefWidth="103.0" promptText="Inaltime" />
+                  <TextField fx:id="lungimeUsaField" layoutX="495.0" layoutY="143.0" prefHeight="31.0" prefWidth="80.0" promptText="Lungime" />
+                  <Label layoutX="164.0" layoutY="120.0" text="ID Perete" textFill="WHITE">
+                     <font>
+                        <Font name="EmojiOne Color SVGinOT" size="19.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="272.0" layoutY="120.0" text="ID Usa" textFill="WHITE">
+                     <font>
+                        <Font name="EmojiOne Color SVGinOT" size="19.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="385.0" layoutY="120.0" text="Inaltime" textFill="WHITE">
+                     <font>
+                        <Font name="EmojiOne Color SVGinOT" size="19.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="495.0" layoutY="120.0" text="Lungime" textFill="WHITE">
+                     <font>
+                        <Font name="EmojiOne Color SVGinOT" size="19.0" />
+                     </font>
+                  </Label>
+                  <Button fx:id="adaugaUsaButton" layoutX="167.0" layoutY="199.0" mnemonicParsing="false" onAction="#adaugaUsa" text="Adauga" />
+                  <Button fx:id="modificaUsaButton" layoutX="325.0" layoutY="199.0" mnemonicParsing="false" onAction="#modificaUsa" text="Modifica" />
+                  <Button fx:id="stergeUsaButton" layoutX="500.0" layoutY="199.0" mnemonicParsing="false" onAction="#stergeUsa" text="Sterge" />
+                  <Button fx:id="terminaFereastraButton1" layoutX="406.0" layoutY="270.0" mnemonicParsing="false" onAction="#terminaAdaugatUsa" text="Termina de adaugat" />
+                  <Button fx:id="anuleazaAdaugariUsaButton" layoutX="168.0" layoutY="270.0" mnemonicParsing="false" onAction="#anuleazaAdaugariUsa" text="Anuleaza adaugarile" />
+                  <ListView fx:id="usiListView" layoutX="14.0" layoutY="200.0" prefHeight="147.0" prefWidth="126.0" />
+                  <Label layoutX="31.0" layoutY="4.0" text="Lista Pereti" textFill="WHITE">
+                     <font>
+                        <Font name="EmojiOne Color SVGinOT" size="19.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="42.0" layoutY="176.0" text="Lista Usi" textFill="WHITE">
+                     <font>
+                        <Font name="EmojiOne Color SVGinOT" size="19.0" />
+                     </font>
+                  </Label>
+                  <ImageView fitHeight="68.0" fitWidth="200.0" layoutX="225.0" layoutY="32.0">
+                     <image>
+                        <Image url="@../pictures/megavoxlogo.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+         </content>
+      </Tab>
+  </tabs>
+</TabPane>

@@ -1,0 +1,79 @@
+.anchorPaneRight{
+    -fx-background-color: transparent;}
+.tableView{
+    -fx-background-color: transparent;
+}
+
+.tableView:focused{
+    -fx-background-color: transparent;
+}
+.tableView .column-header-background{
+    -fx-background-color: black;
+}
+
+
+.table-view .column-header-background .label{
+    -fx-background-color: transparent;
+    -fx-text-fill: white;
+}
+
+
+.tableView .column-header {
+    -fx-background-color: transparent;
+}
+
+.tableView .table-cell{
+    -fx-text-fill: white;
+    -fx-alignment:center;}
+
+.table-row-cell{
+    -fx-background-color: -fx-table-cell-border-color,#424241;
+    -fx-background-insets: 0, 0 0 1 0;
+    -fx-padding: 0.0em; /* 0 */
+}
+
+.table-row-cell:odd{
+    -fx-background-color: -fx-table-cell-border-color, black;
+    -fx-background-insets: 0, 0 0 1 0;
+    -fx-padding: 0.0em; /* 0 */
+}
+
+.table-row-cell:selected {
+    -fx-background-color: transparent;
+    -fx-background-insets: 0;
+    -fx-background-radius: 1;
+}
+.tab-pane .tab-header-area .tab-header-background {
+    -fx-opacity: 0;
+}
+
+.tab-pane
+{
+    -fx-tab-min-width:90px;
+}
+
+.tab{
+    -fx-background-insets: 0 1 0 1,0,0;
+}
+.tab-pane .tab
+{
+    -fx-background-color: #394563;
+
+}
+
+.tab-pane .tab:selected
+{
+    -fx-background-color: #318271;
+}
+
+.tab .tab-label {
+    -fx-alignment: CENTER;
+    -fx-text-fill: black;
+    -fx-font-size: 22px;
+    -fx-font-weight: bold;
+}
+
+.tab:selected .tab-label {
+    -fx-alignment: CENTER;
+    -fx-text-fill: black;
+}

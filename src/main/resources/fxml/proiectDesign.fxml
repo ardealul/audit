@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.effect.ColorInput?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ro.Controller.ProiectController">
+   <children>
+      <ImageView fitHeight="400.0" fitWidth="607.0" layoutX="-3.0">
+         <image>
+            <Image url="@../pictures/background.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="proiectNou" layoutX="228.0" layoutY="185.0" mnemonicParsing="false" onAction="#proiectNouAction" prefHeight="31.0" prefWidth="145.0" text="Proiect Nou" />
+      <Button fx:id="proiectvechi" layoutX="228.0" layoutY="263.0" mnemonicParsing="false" onAction="#proiectVechiAction" prefHeight="31.0" prefWidth="145.0" text="Deschide Proiect" />
+      <ImageView fitHeight="68.0" fitWidth="200.0" layoutX="200.0" layoutY="57.0">
+         <image>
+            <Image url="@../pictures/megavoxlogo.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>
